@@ -19,6 +19,7 @@ body {
   font-family: Poppins, sans-serif;
   background: #000;
   color: whitesmoke;
+  line-height: 1.7;
 }
 
 /* ============================================================
@@ -41,13 +42,20 @@ NAVBAR
 }
 
 /* ============================================================
-SECTIONS (CRITICAL FIX)
+SECTIONS
 ============================================================ */
 section {
   width: 100%;
   position: relative;
-  padding: 120px 20px;
+  padding: 140px 20px;
   text-align: center;
+}
+
+/* Add breathing room under section titles */
+section h1,
+section h2 {
+  margin-bottom: 32px;
+  letter-spacing: 2px;
 }
 
 /* ============================================================
@@ -90,7 +98,7 @@ HERO
 #hero .caption {
   position: relative;
   z-index: 4;
-  padding-top: 140px;
+  padding-top: 160px;
 }
 
 /* Profile Image */
@@ -98,14 +106,14 @@ HERO
   width: 240px;
   border-radius: 50%;
   border: 3px solid white;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 /* Name */
 .display-4 {
   letter-spacing: 10px;
-  font-size: 24px;
-  margin-bottom: 30px;
+  font-size: 26px;
+  margin-bottom: 40px;
 }
 
 /* ============================================================
@@ -115,6 +123,7 @@ SEARCH
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 16px;
 }
 
 input {
@@ -127,8 +136,7 @@ input {
 }
 
 .btn {
-  margin-top: 20px;
-  padding: 6px 20px;
+  padding: 6px 22px;
   border-radius: 30px;
   background: #111;
   color: white;
@@ -139,10 +147,10 @@ input {
 MORPHING TEXT
 ============================================================ */
 #words-container {
-  position: relative;              /* creates positioning context */
+  position: relative;
   width: 100%;
   max-width: 800px;
-  margin: 40px auto 0 auto;         /* centers container */
+  margin: 50px auto 0;
   height: 60px;
 
   display: flex;
@@ -153,12 +161,11 @@ MORPHING TEXT
   pointer-events: none;
 }
 
-
 #text1,
 #text2 {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);      /* HARD CENTER FIX */
+  transform: translateX(-50%);
   width: 100%;
 
   font-family: 'Raleway', sans-serif;
@@ -169,12 +176,26 @@ MORPHING TEXT
   white-space: nowrap;
 }
 
-
 /* ============================================================
 MISSION
 ============================================================ */
 #spy-mission {
   background: black;
+}
+
+/* Mission hook */
+.mission-tagline {
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-bottom: 32px;
+  opacity: 0.9;
+}
+
+/* Mission body text */
+#spy-mission p {
+  max-width: 780px;
+  margin: 0 auto 24px;
+  text-align: left;
 }
 
 /* ============================================================
@@ -185,7 +206,7 @@ SKILLS
 }
 
 .skill-title {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 /* ============================================================
@@ -197,7 +218,7 @@ PROJECTS
 }
 
 .projects-title {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 /* ============================================================
@@ -208,20 +229,23 @@ INSPIRATION
 }
 
 .inspiration-title {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* ============================================================
-CONTACT (FULL ICON DESIGN RESTORED)
+CONTACT
 ============================================================ */
 #spy-contact {
   background: rgba(0,0,0,.9);
 }
 
 .contact-title {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
+/* ============================================================
+SOCIAL ICONS
+============================================================ */
 .icons {
   display: flex;
   justify-content: center;
@@ -236,11 +260,13 @@ CONTACT (FULL ICON DESIGN RESTORED)
   text-decoration: none;
 }
 
+/* Default tilted state */
 .icons a .layer {
   position: relative;
   width: 55px;
   height: 55px;
   transform: rotate(-35deg) skew(20deg);
+  transition: transform 0.4s ease;
 }
 
 .icons a .layer span {
@@ -264,54 +290,16 @@ CONTACT (FULL ICON DESIGN RESTORED)
 .icons a .layer span:nth-child(4) { opacity: .8; transform: translate(15px,-15px); }
 .icons a .layer span:nth-child(5) { opacity: 1; transform: translate(20px,-20px); }
 
-/* Brand colors */
-.icons a:nth-child(1) { color:#4267b2; }
-.icons a:nth-child(2) { color:#e1306c; }
-.icons a:nth-child(3) { color:#2867b2; }
-.icons a:nth-child(4) { color:#ff0000; }
-
-/* ============================================================
-SOCIAL ICON HOVER BEHAVIOR (FINAL FIX)
-============================================================ */
-
-/* Default state = tilted + stacked */
-.icons a .layer {
-  transform: rotate(-35deg) skew(20deg);
-  transition: transform 0.4s ease;
-}
-
-/* On hover = stand upright */
+/* Hover behavior */
 .icons a:hover .layer {
   transform: rotate(0deg) skew(0deg);
 }
 
-/* Animate the stacked layers flattening */
-.icons a:hover .layer span:nth-child(1) {
-  transform: translate(0, 0);
-  opacity: 0.15;
+.icons a:hover .layer span {
+  transform: translate(0,0);
 }
 
-.icons a:hover .layer span:nth-child(2) {
-  transform: translate(0, 0);
-  opacity: 0.3;
-}
-
-.icons a:hover .layer span:nth-child(3) {
-  transform: translate(0, 0);
-  opacity: 0.45;
-}
-
-.icons a:hover .layer span:nth-child(4) {
-  transform: translate(0, 0);
-  opacity: 0.6;
-}
-
-.icons a:hover .layer span:nth-child(5) {
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
-/* Label text animation */
+/* Label */
 .icons a .text {
   position: absolute;
   left: 50%;
@@ -326,14 +314,18 @@ SOCIAL ICON HOVER BEHAVIOR (FINAL FIX)
   opacity: 1;
 }
 
+/* Brand colors */
+.icons a:nth-child(1) { color:#4267b2; }
+.icons a:nth-child(2) { color:#e1306c; }
+.icons a:nth-child(3) { color:#2867b2; }
+.icons a:nth-child(4) { color:#ff0000; }
 
 /* ============================================================
 FOOTER
 ============================================================ */
 #footer {
   background: black;
-  padding: 20px;
+  padding: 24px;
   text-align: center;
+  opacity: 0.85;
 }
-
-
