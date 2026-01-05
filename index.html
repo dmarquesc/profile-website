@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+  DOCUMENT SETUP
+  ============================================================ -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============================================================
+  PRIMARY SEO
+  ============================================================ -->
+  <title>DC-Morph | DMarques Coleman Portfolio</title>
+  <meta name="description" content="DC-Morph is a portfolio experience by DMarques Coleman featuring web projects, skills, inspiration, and ways to connect.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b0b0f">
+
+  <!-- Canonical (update after GitHub Pages is live) -->
+  <link rel="canonical" href="https://YOURDOMAIN.com/dc-morph/">
+
+  <!-- ============================================================
+  AUTHOR + PUBLISHER
+  ============================================================ -->
+  <meta name="author" content="DMarques Coleman">
+  <meta name="creator" content="DMarques Coleman">
+  <meta name="publisher" content="DMarques Coleman">
+
+  <!-- Optional: helps browsers show correct name in some contexts -->
+  <meta name="application-name" content="DC-Morph">
+
+  <!-- ============================================================
+  SOCIAL SHARING (OPEN GRAPH + TWITTER)
+  Update these URLs once deployed.
+  ============================================================ -->
+  <meta property="og:site_name" content="DC-Morph">
+  <meta property="og:title" content="DC-Morph | DMarques Coleman Portfolio">
+  <meta property="og:description" content="Explore projects, skills, inspiration, and contact links in this portfolio experience by DMarques Coleman.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOURDOMAIN.com/dc-morph/">
+  <meta property="og:image" content="https://YOURDOMAIN.com/dc-morph/social-preview.jpg">
+  <meta property="og:image:alt" content="DC-Morph portfolio preview featuring DMarques Coleman branding.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DC-Morph | DMarques Coleman Portfolio">
+  <meta name="twitter:description" content="Explore projects, skills, inspiration, and contact links in this portfolio experience by DMarques Coleman.">
+  <meta name="twitter:image" content="https://YOURDOMAIN.com/dc-morph/social-preview.jpg">
+  <meta name="twitter:image:alt" content="DC-Morph portfolio preview featuring DMarques Coleman branding.">
+
+  <!-- ============================================================
+  ICONS / FAVICON
+  ============================================================ -->
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <!-- ============================================================
+  PERFORMANCE: PRECONNECT (FONTS/CDN)
+  ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- ============================================================
+  EXTERNAL DEPENDENCIES
+  ============================================================ -->
+  <script src="https://kit.fontawesome.com/6d5b2bc2b7.js" crossorigin="anonymous" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+  >
+
+  <!-- ============================================================
+  YOUR SITE STYLES
+  ============================================================ -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <!-- ============================================================
+  ACCESSIBILITY: SKIP LINK
+  ============================================================ -->
+  <a class="visually-hidden-focusable" href="#main-content">
+    Skip to main content
+  </a>
+
+  <!-- ============================================================
+  HEADER + PRIMARY NAVIGATION
+  ============================================================ -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" id="navbar-spy" aria-label="Primary navigation">
+      <div class="container">
+
+        <!-- Brand / Logo -->
+        <div class="flip-container">
+          <div class="flipper">
+            <div class="front">
+              <a class="navbar-brand flip" href="#section-hero" aria-label="Go to top of page">
+                <img
+                  src="https://assets.codepen.io/6616695/dcent-final.jpg"
+                  alt="DCentric logo"
+                  width="48"
+                  height="48"
+                  loading="eager"
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile nav toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#spy-meet">Meet Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#spy-skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#spy-projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#spy-inspiration">Inspiration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#spy-contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+  SPLASH / INTRO (decorative)
+  Notes:
+  - Use CSS/JS to show/hide.
+  - Keep headings meaningful; empty h1 can confuse screen readers.
+  ============================================================ -->
+  <div class="intro" aria-hidden="true">
+    <div class="logo-header"></div>
+  </div>
+
+  <!-- ============================================================
+  MAIN CONTENT
+  ============================================================ -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- ============================================================
+    HERO SECTION
+    ============================================================ -->
+    <section id="section-hero" aria-label="Hero section">
+      <div id="hero">
+        <div class="texture" aria-hidden="true"></div>
+
+        <!-- Background video:
+        - muted + autoplay is okay, but always provide a poster and accessible fallback.
+        - Consider respecting prefers-reduced-motion in CSS/JS to pause it.
+        -->
+        <video
+          loop
+          muted
+          autoplay
+          playsinline
+          preload="metadata"
+          poster="https://assets.codepen.io/6616695/social-preview-poster.jpg"
+          aria-label="Background video"
+        >
+          <source src="https://assets.codepen.io/6616695/DDD.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="caption">
+          <div class="container">
+
+            <!-- Profile image -->
+            <img
+              src="https://assets.codepen.io/6616695/DC.PNG"
+              alt="Portrait of DMarques Coleman"
+              id="small-image"
+              loading="eager"
+              decoding="async"
+            >
+            <div class="overlay" aria-hidden="true"></div>
+
+            <!-- Use one clear page H1 -->
+            <h1 class="display-4">D&apos;Marques Coleman</h1>
+
+            <!-- ============================================================
+            MEET ME (Anchor target)
+            - You had nav link to #spy-meet but section id was #spy-mission.
+            - This section acts as "Meet Me" content.
+            ============================================================ -->
+            <section class="works-s" id="spy-meet" aria-label="Meet Me">
+              <!-- Search form -->
+              <form action="https://www.google.com/search" method="get" role="search" aria-label="Google search form">
+                <div class="container">
+                  <div class="search-form">
+                    <label class="visually-hidden" for="google-search">Search Google</label>
+                    <input id="google-search" type="text" placeholder="Google Search" name="q" autocomplete="off">
+                    <button class="btn glow-on-hover" type="submit">Search</button>
+                  </div>
+                </div>
+              </form>
+            </section>
+
+            <!-- ============================================================
+            TEXT MERGE EFFECT (decorative text)
+            ============================================================ -->
+            <div id="words-container" aria-hidden="true">
+              <span id="text1"></span>
+              <span id="text2"></span>
+            </div>
+
+            <svg id="filters" aria-hidden="true" focusable="false">
+              <defs>
+                <filter id="threshold">
+                  <feColorMatrix
+                    in="SourceGraphic"
+                    type="matrix"
+                    values="1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 255 -140"
+                  />
+                </filter>
+              </defs>
+            </svg>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+    MISSION SECTION
+    ============================================================ -->
+    <section class="container-fluid" id="spy-mission" aria-label="Mission">
+      <h2>My Mission</h2>
+
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <figure class="img">
+              <img
+                class="img-fluid"
+                src="https://i.imgur.com/Jzghsk1.jpg"
+                alt="DMarques Coleman at a museum"
+                loading="lazy"
+                decoding="async"
+              >
+            </figure>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12" id="statement">
+            <p>
+              My mission is to transform ideas into impactful creations that inspire and serve society. Fueled by my passions for music,
+              video production, and graphic design, I strive to blend artistry with innovation. Through DCentric, I am committed to delivering
+              exceptional web development, videography, and photography solutions that reflect the ever-evolving technological landscape.
+              As the founder of transformative projects like The Deception of D&apos;Lielah, VibeCircuit, and do re mi, I aim to pioneer platforms
+              that foster creativity, connection, and collaboration across industries. By continually learning and pushing boundaries, I aspire
+              to leave a legacy of meaningful work that empowers others and shapes a brighter future.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+    SKILLS SECTION
+    Accessibility notes:
+    - Icons should have alt text.
+    - Repeated id="icon" is invalid. Use a class instead.
+    ============================================================ -->
+    <section class="container-fluid" id="spy-skills" aria-label="Skills">
+      <h2 class="skill-title">Skills</h2>
+
+      <div class="row text-center">
+
+        <div class="skill col-lg-3 col-md-6">
+          <img class="img-fluid" width="50" height="50" src="https://assets.codepen.io/6616695/html5.png" alt="HTML5 logo" loading="lazy">
+          <div class="set">
+            <p>Structuring the web&apos;s content using modern semantic HTML.</p>
+          </div>
+        </div>
+
+        <div class="skill col-lg-3 col-md-6">
+          <img class="img-fluid" width="50" height="50" src="https://assets.codepen.io/6616695/css.png" alt="CSS3 logo" loading="lazy">
+          <div class="set">
+            <p>Presenting beautiful web designs and interactions using modern CSS.</p>
+          </div>
+        </div>
+
+        <div class="skill col-lg-3 col-md-6">
+          <img class="img-fluid" width="50" height="50" src="https://assets.codepen.io/6616695/bootstrap.png" alt="Bootstrap logo" loading="lazy">
+          <div class="set">
+            <p>Rapidly developing responsive websites using Bootstrap.</p>
+          </div>
+        </div>
+
+        <div class="skill col-lg-3 col-md-6">
+          <img class="img-fluid" width="50" height="50" src="https://assets.codepen.io/6616695/adobe.png" alt="Adobe logo" loading="lazy">
+          <div class="set">
+            <p>Creative software tools used to design and produce professional visuals and media.</p>
+          </div>
+        </div>
+
+        <div class="skill col-lg-3 col-md-6">
+          <img class="img-fluid" width="150" height="150" src="https://assets.codepen.io/6616695/badge.png" alt="Achievement badge" loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+    PROJECTS SECTION
+    Accessibility notes:
+    - Give links accessible names.
+    - Fix invalid div attributes: <div col-lg-3 ...> is not valid.
+    ============================================================ -->
+    <section class="works" id="spy-projects" aria-label="Projects">
+      <h2 class="projects-title">Projects</h2>
+
+      <div class="row text-center">
+
+        <div class="skill col-lg-4 col-md-4">
+          <a
+            href="https://WD2-Module-7-Midterm-00-Project-Game-1-Magic8Ba-dmcolem2.asuwd1su21.repl.co"
+            aria-label="Open Magic 8 Ball project"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="img-fluid" width="50" height="50" src="https://assets.codepen.io/6616695/8.png" alt="Magic 8 Ball icon" loading="lazy">
+          </a>
+          <div class="set">Magic 8 Ball</div>
+        </div>
+
+        <div class="skill col-lg-4 col-md-4">
+          <a
+            href="https://WD2-Module-7-Midterm-00-Project-Game-2-HigherLo-dmcolem2.asuwd1su21.repl.co"
+            aria-label="Open Hi-Low Game project"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="img-fluid" width="50" height="50" src="https://assets.codepen.io/6616695/hi-low.png" alt="Hi-Low game icon" loading="lazy">
+          </a>
+          <div class="set">Hi-Low Game</div>
+        </div>
+
+        <div class="skill col-lg-4 col-md-4">
+          <a
+            href="https://WD2-Module-9-Final-03-Project-Game-3-Match-Game-dmcolem2.asuwd1su21.repl.co"
+            aria-label="Open Matching Game project"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="img-fluid" width="50" height="50" src="https://assets.codepen.io/6616695/cube.png" alt="Matching game icon" loading="lazy">
+          </a>
+          <div class="set">Matching Game</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+    INSPIRATION SECTION (Carousel)
+    Accessibility notes:
+    - Ensure captions are readable against images.
+    - Carousel already includes accessible prev/next hidden labels.
+    ============================================================ -->
+    <section class="container-fluid" id="spy-inspiration" aria-label="Inspiration">
+      <h2 class="inspiration-title">Inspiration</h2>
+
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" aria-label="Inspiration carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="https://assets.codepen.io/6616695/tony.jpg" class="d-block w-100" alt="Dr. Tony Evans" loading="lazy">
+              <div class="carousel-caption d-md-block">
+                <h3>
+                  <q>Watches have watch makers, paintings have painters, designs have designers, and creation has a creator</q>
+                </h3>
+                <p>Dr. Tony Evans</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://assets.codepen.io/6616695/smoke1.jpg" class="d-block w-100" alt="Smokey Robinson" loading="lazy">
+              <div class="carousel-caption d-md-block">
+                <h3>
+                  <q>I always try to write a song. I never just want to write a record. Songwriting is my gift from God.</q>
+                </h3>
+                <p>Smokey Robinson</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://assets.codepen.io/6616695/watchman.jpg" class="d-block w-100" alt="Watchman Nee" loading="lazy">
+              <div class="carousel-caption d-md-block">
+                <h3>
+                  <q>The more humble one is at God&apos;s feet, the more useful he is in God&apos;s hand.</q>
+                </h3>
+                <p>Watchman Nee</p>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+    CONTACT SECTION
+    Accessibility notes:
+    - Add target/_blank with rel for external links
+    - Fix LinkedIn href (must include https://)
+    - Give each icon an accessible name
+    ============================================================ -->
+    <section id="spy-contact">
+  <h2 class="contact-title">Contact</h2>
+
+  <div class="icons">
+
+    <a href="https://www.facebook.com/profile.php?id=100069915836320" target="_blank" rel="noopener">
+      <div class="layer">
+        <span></span><span></span><span></span><span></span>
+        <span class="fab fa-facebook-f"></span>
+      </div>
+      <div class="text">Facebook</div>
+    </a>
+
+    <a href="https://www.instagram.com/dcentric21/" target="_blank" rel="noopener">
+      <div class="layer">
+        <span></span><span></span><span></span><span></span>
+        <span class="fab fa-instagram"></span>
+      </div>
+      <div class="text">Instagram</div>
+    </a>
+
+    <a href="https://www.linkedin.com/in/dmarques-coleman-b59271219/" target="_blank" rel="noopener">
+      <div class="layer">
+        <span></span><span></span><span></span><span></span>
+        <span class="fab fa-linkedin-in"></span>
+      </div>
+      <div class="text">LinkedIn</div>
+    </a>
+
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+      <div class="layer">
+        <span></span><span></span><span></span><span></span>
+        <span class="fab fa-youtube"></span>
+      </div>
+      <div class="text">YouTube</div>
+    </a>
+
+  </div>
+</section>
+
+  </main>
+
+  <!-- ============================================================
+  FOOTER
+  ============================================================ -->
+  <footer class="container-fluid" id="footer" aria-label="Site footer">
+    <div class="text-center">
+      <p>&copy; <span id="year"></span> D&apos;Marques Coleman</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+  SCRIPTS
+  ============================================================ -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+    defer
+  ></script>
+
+  <script src="script.js" defer></script>
+
+  <!-- ============================================================
+  SMALL ENHANCEMENTS:
+  - Current year in footer
+  - Optional reduced motion hook (pause video/animations in your JS)
+  ============================================================ -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
