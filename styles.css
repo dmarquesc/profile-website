@@ -51,7 +51,7 @@ section {
   text-align: center;
 }
 
-/* Add breathing room under section titles */
+/* Title spacing consistency */
 section h1,
 section h2 {
   margin-bottom: 32px;
@@ -69,6 +69,11 @@ HERO
   position: relative;
   min-height: 100vh;
   overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #hero video {
@@ -98,7 +103,9 @@ HERO
 #hero .caption {
   position: relative;
   z-index: 4;
-  padding-top: 160px;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
 }
 
 /* Profile Image */
@@ -191,7 +198,7 @@ MISSION
   opacity: 0.9;
 }
 
-/* Mission body text */
+/* Mission body */
 #spy-mission p {
   max-width: 780px;
   margin: 0 auto 24px;
@@ -250,6 +257,7 @@ SOCIAL ICONS
   display: flex;
   justify-content: center;
   gap: 80px;
+  flex-wrap: wrap;
 }
 
 .icons a {
@@ -283,14 +291,14 @@ SOCIAL ICONS
   text-align: center;
 }
 
-/* Stacked depth */
+/* Depth stack */
 .icons a .layer span:nth-child(1) { opacity: .2; }
 .icons a .layer span:nth-child(2) { opacity: .4; transform: translate(5px,-5px); }
 .icons a .layer span:nth-child(3) { opacity: .6; transform: translate(10px,-10px); }
 .icons a .layer span:nth-child(4) { opacity: .8; transform: translate(15px,-15px); }
 .icons a .layer span:nth-child(5) { opacity: 1; transform: translate(20px,-20px); }
 
-/* Hover behavior */
+/* Hover upright */
 .icons a:hover .layer {
   transform: rotate(0deg) skew(0deg);
 }
@@ -329,3 +337,50 @@ FOOTER
   text-align: center;
   opacity: 0.85;
 }
+
+/* ============================================================
+RESPONSIVE FIXES
+============================================================ */
+@media (max-width: 768px) {
+
+  section {
+    padding: 110px 16px;
+  }
+
+  #small-image {
+    width: 180px;
+  }
+
+  .display-4 {
+    font-size: 18px;
+    letter-spacing: 6px;
+  }
+
+  #text1,
+  #text2 {
+    font-size: 22px;
+  }
+
+  input {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .icons {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 390px) {
+
+  .display-4 {
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+
+  #text1,
+  #text2 {
+    font-size: 20px;
+  }
+}
+
